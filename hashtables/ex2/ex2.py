@@ -26,6 +26,7 @@ def reconstruct_trip(tickets, length):
 
     for i in range(length):
         route[i] = hash_table_retrieve(hashtable, current_location)
+        # print(route[i], 'current location is:', current_location)
         current_location = route[i]
-
+    
     return route
